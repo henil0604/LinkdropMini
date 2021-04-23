@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+:root {
+  --wispy_bg_primary: #f3f6fb;
+  --wispy_primary: #004dfc;
+  --wispy_light_primary: #5285fd;
+  --wispy_light_primary2: #c3d5fc;
+  --wispy_alert: #ff7350;
+  --wispy_light_alert: #fff1e9;
+  --wispy_success: #2fc7b0;
+  --wispy_light_success: #2ac5ac;
+  --wispy_purple: #725fc2;
+  --wispy_light_purple: #9b8dd5;
+  --wispy_dark: #1a233b;
+  --wispy_danger: #f32013;
+  --wispy_danger2: #ca0b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*[role="button"] {
+  cursor: pointer;
+}
+
+.wispy_bg_primary {
+  background-color: var(--wispy_primary);
+}
+
+.wispy_bg_light_primary {
+  background-color: var(--wispy_light_primary);
+}
+
+.wispy_bg_light_primary2 {
+  background-color: var(--wispy_light_primary2);
+}
+
+.wispy_bg_alert {
+  background-color: var(--wispy_alert);
+}
+
+.wispy_bg_light_alert {
+  background-color: var(--wispy_light_alert);
+}
+
+.wispy_bg_success {
+  background-color: var(--wispy_success);
+}
+
+.wispy_bg_light_success {
+  background-color: var(--wispy_light_success);
+}
+
+.wispy_bg_purple {
+  background-color: var(--wispy_purple);
+}
+
+.wispy_bg_light_purple {
+  background-color: var(--wispy_light_purple);
+}
+
+.wispy_bg_dark {
+  background-color: var(--wispy_dark);
+}
+
+.wispy_bg_white {
+  background-color: #ffffff;
+}
+
+.wispy_bg_black {
+  background-color: black;
+}
+
+.wispy_color_primary {
+  color: var(--wispy_primary);
+}
+
+.wispy_color_light_primary {
+  color: var(--wispy_light_primary);
+}
+
+.wispy_color_light_primary2 {
+  color: var(--wispy_light_primary2);
+}
+
+.wispy_color_alert {
+  color: var(--wispy_alert);
+}
+
+.wispy_color_light_alert {
+  color: var(--wispy_light_alert);
+}
+
+.wispy_color_success {
+  color: var(--wispy_success);
+}
+
+.wispy_color_light_success {
+  color: var(--wispy_light_success);
+}
+
+.wispy_color_purple {
+  color: var(--wispy_purple);
+}
+
+.wispy_color_light_purple {
+  color: var(--wispy_light_purple);
+}
+
+.wispy_color_dark {
+  color: var(--wispy_dark);
+}
+
+.wispy_color_white {
+  color: #fff;
+}
+
+.wispy_color_black {
+  color: black;
+}
+
+.wispy_input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid #f2f2f4;
+  border-radius: 10px;
+  padding: 5px 10px;
+  outline: none;
+  transition: 0.2s;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
+
+.wispy_input:focus {
+  border: 2px solid var(--wispy_light_primary);
+}
+
+.wispy_btn_primary {
+  width: auto;
+  height: auto;
+  min-width: auto;
+  min-height: auto;
+  max-width: 400px;
+  max-height: 100px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background-color: #004dfc;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.5s;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 5px 5px;
+}
+
+.wispy_btn_primary:hover {
+  color: white;
+  transform: scale(0.95);
+}
+
+.wispy_btn_primary:disabled:hover {
+  transform: none;
+}
+
+.wispy_btn_primary:disabled {
+  background-color: #6090fd;
+  cursor: not-allowed;
+}
+
+.wispy_flex {
+  display: flex;
+}
+
+.wispy_flex_just_center {
+  justify-content: center;
+}
+
+.wispy_flex_align_center {
+  align-items: center;
+}
+
+.wispy_devider_round_small {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.wispy_input_primary {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--wispy_light_primary);
+  border-radius: 5px;
+  margin: 5px 5px;
+  transition: 0.3s;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.wispy_input_primary:hover {
+  box-shadow: 0px 0px 2px 1px var(--wispy_light_primary);
+  outline: none;
+}
+
+.wispy_input_primary:focus {
+  outline: none;
+  border: 1px solid var(--wispy_light_primary);
+  box-shadow: 0px 0px 2px 1px var(--wispy_light_primary);
+}
+
+.wispy_text_center {
+  text-align: center;
+}
+
+.CUSTOM_SCROLL::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.CUSTOM_SCROLL::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.CUSTOM_SCROLL::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}

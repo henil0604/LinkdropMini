@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 5px 1px #bbb;
+  display: flex;
+  align-items: center;
+  flex-direction: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: 0.6s all;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+.card .heading {
+  color: #444;
+  font-size: 1.4em;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+
+.card .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #bbb;
+}
+
+.card .parts {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card .parts .left {
+  width: 50%;
+  height: 100%;
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid #bbb;
+  padding-right: 5px;
+}
+
+.card .parts .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #bbb;
+  padding-right: 5px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+.card .parts .right::-webkit-scrollbar {
+  display: none;
+}
+
+.card .parts .left .selectFiles {
+  width: 40%;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #1a73e8;
+  color: white;
+  font-size: 18px;
+  transition: 0.4s ease;
+  box-shadow: 0px 3px 3px 1px #bbb;
+  box-sizing: border-box;
+}
+
+.card .parts .left .selectFiles:hover {
+  background-color: #1a7fff;
+  border: 1px solid #999;
+  transform: translateY(-2px);
+}
+
+.card .parts .right .fileList {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 0 5px;
+  max-height: 100%;
+}
+
+.card .parts .right .fileList .fileItem {
+  width: 100%;
+  height: 50px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  transition: 0.2s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.card .parts .right .fileList .fileItem:hover {
+  background-color: #f0f0f0;
+}
+
+.fileList .fileItem .fileName {
+  margin: 0 10px;
+}
+
+.fileList .fileItem .fileSize {
+  margin: 0 10px;
+}
+
+.fileList .fileItem .remove {
+  position: absolute;
+  right: 20px;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #ff0000;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  box-shadow: 0px 3px 5px 1px #bbb;
+}
+
+.card .footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    overflow-y: scroll;
+  }
+
+  .card .parts {
+    flex-direction: column;
+  }
+
+  .card .parts .left {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .card .parts .right {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top: 1px solid #bbb;
+  }
+
+  .fileList {
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card .heading {
+    display: none;
+  }
+
+  .card {
+    overflow-y: scroll;
+  }
+}
+
+.roundDivider {
+  width: 5px;
+  height: 5px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+}

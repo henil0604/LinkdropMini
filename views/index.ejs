@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkDrop</title>
+
+    <%- include("./partials/_headerIncludes") %>
+
+        <script src="https://kit.fontawesome.com/23a0a9f173.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="/assets/css/index/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="card CUSTOM_SCROLL">
+            <h2 class="heading">LinkDrop - An Easy Drop</h2>
+
+            <div class="parts">
+
+                <div class="left">
+                    <button class="selectFiles" id="selectFiles">Select Files</button>
+                </div>
+
+
+                <div class="right">
+                    <div class="fileList CUSTOM_SCROLL" id="fileList">
+                        <!-- <div class="fileItem">
+                            <div class="fileName">Hello.txt</div>
+                            <div class="roundDivider"></div>
+                            <div class="fileSize">10 Kb</div>
+
+                            <button class="remove">x</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button class="wispy_btn_primary" id="uploadAll" disabled>Upload All</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <%- include("./partials/_footerIncludes") %>
+
+        <script src="/assets/js/index/classes.js"></script>
+        <script src="/assets/js/index/index.js"></script>
+</body>
+
+</html>

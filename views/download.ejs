@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Download - <%= zipId %>
+    </title>
+
+    <%- include("./partials/_headerIncludes") %>
+
+        <script src="https://kit.fontawesome.com/23a0a9f173.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="/assets/css/index/style.css">
+
+        <style>
+            .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card .download {
+                width: 30%;
+                height: 50px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+            }
+        </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="card CUSTOM_SCROLL">
+            <a class="wispy_btn_primary download" download href="/uploads/<%= zipId %>/<%= zipId %>.zip"> Download
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
