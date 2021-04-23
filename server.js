@@ -32,12 +32,12 @@ app.get("/", (req, res) => {
 })
 
 
-app.listen(utils.config.server.PORT, () => {
+app.listen(process.env.PORT || utils.config.server.PORT, () => {
 
     console.log(`
-        - Listening on Port ${utils.config.server.PORT}
-            http://127.0.0.1:${utils.config.server.PORT}
-            http://localhost:${utils.config.server.PORT}
+        - Listening on Port ${process.env.PORT || utils.config.server.PORT}
+            http://127.0.0.1:${process.env.PORT || utils.config.server.PORT}
+            http://localhost:${process.env.PORT || utils.config.server.PORT}
 
         - Took ${Date.now() - STARTING_TIME}ms to Load Up
     `)
